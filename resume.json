@@ -164,13 +164,87 @@
             "hidden" : true,
         },
     ],
-    "skills" : {
-        "Programming" : [
-            "C++, Hack (PHP), Netlogo, C, Python | Ruby, Go, Java, Perl",
-            "Concurrent Programming, Berkeley Sockets, Relational Databases (SQL)",
-        ],
-        "Other" : [
-            "I make a mean key lime pie",
-        ],
-    },
+    "skills" : [
+        {
+            "name" : "Programming",
+            "desc" : [
+                "C++, Hack (PHP), Netlogo, C, Python | Ruby, Go, Java, Perl",
+                "Concurrent Programming, Berkeley Sockets, Relational Databases (SQL)",
+            ],
+        },
+        {
+            "name" : "Other"
+            "desc" : [
+                "I make a mean key lime pie",
+            ],
+        },
+    ],
+    "activities" : [
+        {
+            "org": "",
+            "positions" : [
+                {
+                    "name" : "",
+                    "start" : "",
+                    "end" : "",
+                },
+            ],
+            "hidden" : true,
+        },
+        {
+            "org" : "Eta Kappa Nu (HKN) - &beta;&epsilon;",
+            "positions" : [
+                {
+                    "name" : "Member",
+                    "start" : "January 2014",
+                    "end" : "May 2015",
+                    "hidden" : false,
+                },
+                {
+                    "name" : "Events Officer",
+                    "start" : "January 2015",
+                    "end" : "March 2015",
+                    "hidden" : true,
+                },
+
+            ],
+            "hidden" : false,
+        },
+        {
+            "org": "Michigan Hackers",
+            "start" : "April 2012",
+            "end" : "December 2014",
+            "positions" : [
+                {
+                    "name" : "Exec Member",
+                    "start" : "February 2013",
+                    "end" : "April 2014",
+                },
+            ],
+            "hidden" : false,
+        },
+        {
+            "org": "",
+            "positions" : [
+                {
+                    "name" : "",
+                    "start" : "",
+                    "end" : "",
+                },
+            ],
+            "hidden" : false,
+        },
+        {
+            "org": "",
+            "positions" : [
+                {
+                    "name" : "",
+                    "start" : "",
+                    "end" : "",
+                },
+            ],
+            "hidden" : false,
+        },
+
+    ],
 }
