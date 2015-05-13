@@ -9,10 +9,12 @@
         <tr>
           <td style="width:340px;">
             <font size="5">
-              <b id="name"></b>
+              <b id="name">Resume Basic Info</b>
             </font>
           </td>
-          <td id="rightofname"></td>
+          <td id="rightofname">
+            <img class="spinner" src="spinner.gif">
+          </td>
         </tr>
         <tr>
           <td>
@@ -87,7 +89,7 @@
       var addr2 = basic["city"] + ", " + basic["state"] + ", " + basic["zip"];
       $("#addr2")[0]["innerText"] = addr2;
 
-
+      $(".spinner").remove();
     </script>
   </body>
 </html>
