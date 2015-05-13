@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="resume.css">
+</head>
+<body>
+  <div name="aboveLine">
+    <table name = "heading">
+     <tr>
+       <td style="width:340px;">
+         <font size="5">
+          <b id="name"></b>
+        </font>
+      </td>
+      <td id="rightofname"></td>
+    </tr>
+    <tr>
+     <td id="email">
+     </td>
+     <td id="addr1" style="width:230px;"></td>
+   </tr>
+   <tr>
+     <td id="phone"></td>
+     <td id="addr2"></td>
+   </table>
+ </div>
+ <hr class="top" />
+ <hr class="bot" />
+
+ <script src="js/jquery-1.10.2.js"></script>
+ <script src="js/jquery-ui-1.11.4.js"></script>
+ <script src="js/util.js"></script>
+<script>
+ var json = loadJSON("./resume.json");
+ console.log(json);
+  
+</script>
+</body>
+</html>

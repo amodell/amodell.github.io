@@ -40,7 +40,6 @@
             "end" : "Present",
             "desc" : [
             ],
-            "hidden" : false,
         },
         {
             "org" : "University of Michigan Center for the Study of Complex Systems",
@@ -52,7 +51,6 @@
             "desc" : [
                 "Generates and extends models to simulate the spread of beliefs through networks",
             ],
-            "hidden" : false,
         },
         {
             "org" : "University of Michigan College of Engineering",
@@ -64,7 +62,6 @@
             "desc" : [
                 "Lead discussion and helped instruct undergraduate course on Operating Systems",
             ],
-            "hidden" : false,
         },
         {
             "org" : "Facebook, UK",
@@ -76,7 +73,6 @@
             "desc" : [
                 "Implemented and analyzed text clustering techniques for spam detection",
             ],
-            "hidden" : false,
         },
         {
             "org" : "University of Michigan College of Engineering",
@@ -88,7 +84,6 @@
             "desc" : [
                 "Produced software to examine the state of TLS Cipher Suites on the internet",
             ],
-            "hidden" : false,
         },
         {
             "org" : "Eta Kappa Nu (HKN) - &beta;&epsilon;",
@@ -112,7 +107,6 @@
             "desc" : [
                 "Wrote a replacement system to manage metadata for log data",
             ],
-            "hidden" : false,
         },
         {
             "org" : "TekSyndicate.com",
@@ -198,7 +192,6 @@
                     "name" : "Member",
                     "start" : "January 2014",
                     "end" : "May 2015",
-                    "hidden" : false,
                 },
                 {
                     "name" : "Events Officer",
@@ -208,7 +201,6 @@
                 },
 
             ],
-            "hidden" : false,
         },
         {
             "org": "Michigan Hackers",
@@ -221,7 +213,6 @@
                     "end" : "April 2014",
                 },
             ],
-            "hidden" : false,
         },
         {
             "org": "University of Michigan Centeral Student Government",
@@ -243,7 +234,6 @@
                 },
 
             ],
-            "hidden" : false,
         },
         {
             "org": "MHacks Hackathon",
@@ -254,7 +244,6 @@
                     "end" : "",
                 },
             ],
-            "hidden" : false,
         },
         {
             "org": "TEDxUofM",
@@ -265,7 +254,6 @@
                     "end" : "March 2012",
                 },
             ],
-            "hidden" : false,
         },
         {
             "org": "UM PC Gamerz Unite",
@@ -276,7 +264,6 @@
                     "end" : "April 2012",
                 },
             ],
-            "hidden" : false,
         },
         {
             "org": "Cranbrook Robotics Team",
@@ -287,7 +274,6 @@
                     "end" : "July 2011",
                 },
             ],
-            "hidden" : false,
         },
     ],
     "honors" : [
