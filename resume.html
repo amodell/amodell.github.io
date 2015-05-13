@@ -53,43 +53,44 @@
 
     <!-- Handlebars templates before our buisness logic-->
     <script id="university-template" type="text/x-handlebars-template">
-    <p>
-      <b>{{school}}</b>, {{city}}, {{state}}
-      <span>{{graduation}}</span>
-    </p>
-    <p>{{college}} - {{degree}} - GPA: {{gpa}}</p>
-    {{#if minor}}
-    <p>Minor: {{minor}}</p>
-    {{/if}}
+      <p>
+        <b>{{school}}</b>, {{city}}, {{state}}
+        <span>{{graduation}}</span>
+      </p>
+      <p>{{college}} - {{degree}} - GPA: {{gpa}}</p>
+      {{#if minor}}
+      <p>Minor: {{minor}}</p>
+      {{/if}}
     </script>
-<!--
-    <script id="secondary-template" type="text/x-handlebars-template">
-    <p>
-      <b>{{school}}</b>, {{city}}, {{state}}
-      <span>{{graduation}}</span>
-    </p>
-    <p>Secondary School - GPA: {{gpa}}
-    </script>
+    <!--
+        <script id="secondary-template" type="text/x-handlebars-template">
+          <p>
+            <b>{{school}}</b>, {{city}}, {{state}}
+            <span>{{graduation}}</span>
+          </p>
+          <p>Secondary School - GPA: {{gpa}}
+        </script>
 
-    <script id="exp-template" type="text/x-handlebars-template">
+        <script id="exp-template" type="text/x-handlebars-template">
 
-    </script>
--->
+        </script>
+        -->
     <script>
-      var json = loadJSON("https://amodell.github.io/resume.json");
-      console.log(json);
+      function fillResume(json) {
+        // set up basic info
+        var basic = json["basic"];
+        $("#name")[0]["innerText"] = basic["name"];
+        $("#email")[0]["innerText"] = basic["email"];
+        $("#email")[0]["href"] = "mailto:" + basic["email"];
+        $("#phone")[0]["innerText"] = basic["phone"];
+        $("#addr1")[0]["innerText"] = basic["addr1"];
+        var addr2 = basic["city"] + ", " + basic["state"] + ", " + basic["zip"];
+        $("#addr2")[0]["innerText"] = addr2;
 
-      // set up basic info
-      var basic = json["basic"];
-      $("#name")[0]["innerText"] = basic["name"];
-      $("#email")[0]["innerText"] = basic["email"];
-      $("#email")[0]["href"] = "mailto:" + basic["email"];
-      $("#phone")[0]["innerText"] = basic["phone"];
-      $("#addr1")[0]["innerText"] = basic["addr1"];
-      var addr2 = basic["city"] + ", " + basic["state"] + ", " + basic["zip"];
-      $("#addr2")[0]["innerText"] = addr2;
-
-      $(".spinner").remove();
+        // remove the spinner because we're done?!?
+        $(".spinner").remove();
+      };
+      $.getJSON("https://amodell.github.io/resume.json", fillResume);
     </script>
   </body>
 </html>
