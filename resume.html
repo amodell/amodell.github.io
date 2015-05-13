@@ -9,7 +9,7 @@
      <tr>
        <td style="width:340px;">
          <font size="5">
-          <b id="name"></b>
+          <b id="name">nnn</b>
         </font>
       </td>
       <td id="rightofname"></td>
@@ -31,11 +31,11 @@
  <script src="js/jquery-ui-1.11.4.js"></script>
  <script src="js/util.js"></script>
 <script>
- var json = loadJSON("./resume.json");
+ var json = loadJSON("https://amodell.github.io/resume.json");
  console.log(json);
 
  // set up basic info
- $("#name").text() = json["basic"]["name"];
+ $("#name")[0]["innerText"] = json["basic"]["name"];
   
 </script>
 </body>
