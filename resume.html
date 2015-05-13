@@ -62,15 +62,15 @@
       <p>Minor: {{minor}}</p>
       {{/if}}
     </script>
-    <!--
-        <script id="secondary-template" type="text/x-handlebars-template">
-          <p>
-            <b>{{school}}</b>, {{city}}, {{state}}
-            <span>{{graduation}}</span>
-          </p>
-          <p>Secondary School - GPA: {{gpa}}
-        </script>
 
+    <script id="secondary-template" type="text/x-handlebars-template">
+      <p>
+        <b>{{school}}</b>, {{city}}, {{state}}
+        <span>{{graduation}}</span>
+      </p>
+      <p>Secondary School - GPA: {{gpa}}
+    </script>
+<!--
         <script id="exp-template" type="text/x-handlebars-template">
 
         </script>
@@ -87,9 +87,20 @@
         var addr2 = basic["city"] + ", " + basic["state"] + ", " + basic["zip"];
         $("#addr2")[0]["innerText"] = addr2;
 
+        // Add all educations
+        console.log(university_template(json["education"][0]));
+        console.log(secondary_template(json["education"][1]));
+
         // remove the spinner because we're done?!?
         $(".spinner").remove();
       };
+
+      // compile handlebars templates
+      var university_template = Handlebars.compile(
+        $("#university-template").html());
+      var secondary_template = Handlebars.compile(
+        $("#secondary-template").html());
+
       $.getJSON("https://amodell.github.io/resume.json", fillResume);
     </script>
   </body>
