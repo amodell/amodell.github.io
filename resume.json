@@ -17,6 +17,7 @@
             "college" : "College of Engineering",
             "degree" : "BSE Computer Science and Engineering",
             "gpa" : "3.717/4.000",
+            "graduation" : "May 2015",
             "minor" : "The study of Complex Systems"
         },
         {
@@ -27,6 +28,7 @@
             "college" : "",
             "degree" : "",
             "gpa" : "3.90/4.00",
+            "graduation" : "June 2011",
             "minor" : ""
         }
     ],
