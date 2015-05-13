@@ -9,14 +9,14 @@
      <tr>
        <td style="width:340px;">
          <font size="5">
-          <b id="name">nnn</b>
+          <b id="name"></b>
         </font>
       </td>
       <td id="rightofname"></td>
     </tr>
     <tr>
      <td>
-      <a id="email" href="mailto:amodell@umich.edu" style="text-decoration: none"></a>
+      <a id="email" style="text-decoration: none"></a>
      </td>
      <td id="addr1" style="width:230px;"></td>
    </tr>
@@ -39,10 +39,13 @@
  var basic = json["basic"];
  $("#name")[0]["innerText"] = basic["name"];
  $("#email")[0]["innerText"] = basic["email"];
+ $("#email")[0]["href"] = "mailto:" + basic["email"];
  $("#phone")[0]["innerText"] = basic["phone"];
  $("#addr1")[0]["innerText"] = basic["addr1"];
  var addr2 = basic["city"] + ", " + basic["state"] + ", " + basic["zip"];
  $("#addr2")[0]["innerText"] = addr2;
+
+
 </script>
 </body>
 </html>
