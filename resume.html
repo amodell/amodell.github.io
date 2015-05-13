@@ -31,7 +31,7 @@
     <hr class="bot" />
     <div name="belowline" style="width:768px;">
       <b>Education</b>
-      <div id="edu_fields">
+      <div class="edu_fields">
       </div>
       <b>Experience</b>
       <div id="exp_fields">
@@ -53,7 +53,8 @@
 
     <!-- Handlebars templates before our buisness logic-->
     <script id="university-template" type="text/x-handlebars-template">
-      <p>
+    <div class="edu_field">
+    <p>
         <b>{{school}}</b>, {{city}}, {{state}}
         <span>{{graduation}}</span>
       </p>
@@ -61,20 +62,20 @@
       {{#if minor}}
       <p>Minor: {{minor}}</p>
       {{/if}}
+      </div>
     </script>
 
     <script id="secondary-template" type="text/x-handlebars-template">
+    <div class="edu_field">
       <p>
         <b>{{school}}</b>, {{city}}, {{state}}
         <span>{{graduation}}</span>
       </p>
       <p>Secondary School - GPA: {{gpa}}
+      </div>
     </script>
-<!--
-        <script id="exp-template" type="text/x-handlebars-template">
 
-        </script>
-        -->
+
     <script>
       function fillResume(json) {
         // set up basic info
@@ -88,8 +89,19 @@
         $("#addr2")[0]["innerText"] = addr2;
 
         // Add all educations
-        console.log(university_template(json["education"][0]));
-        console.log(secondary_template(json["education"][1]));
+        json["education"].forEach(function(school){
+          var school_html = null;
+          if (school["type"] === "university") {
+            school_html = university_template(school);
+          }
+          else if (school["type"] === "secondary") {
+            school_html = secondary_template(school);
+          }
+          else {
+            alert("school type error for: " + school["school"]);
+          }
+          $(".edu_fields").append(school_html);          
+        })
 
         // remove the spinner because we're done?!?
         $(".spinner").remove();
