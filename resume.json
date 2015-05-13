@@ -154,7 +154,7 @@
             "org" : "Progessive Metal Manufacturing Company",
             "city" : "Ferndale",
             "state" : "MI",
-            "position" : "High School Intern"
+            "position" : "High School Intern",
             "start" : "May 2011",
             "end" : "",
             "desc" : [
@@ -173,7 +173,7 @@
             ],
         },
         {
-            "name" : "Other"
+            "name" : "Other",
             "desc" : [
                 "I make a mean key lime pie",
             ],
@@ -224,27 +224,90 @@
             "hidden" : false,
         },
         {
-            "org": "",
+            "org": "University of Michigan Centeral Student Government",
             "positions" : [
                 {
-                    "name" : "",
-                    "start" : "",
+                    "name" : "College of Engineering Representative",
+                    "start" : "October 2011",
+                    "end" : "April 2015",
+                },
+                {
+                    "name" : "Muleiple Chair / Vice chair positions",
+                    "start" : "January 2012",
+                    "end" : "April 2015",
+                },
+                {
+                    "name" : "Speaker of the Assmebly",
+                    "start" : "March 2013",
+                    "end" : "December 2014",
+                },
+
+            ],
+            "hidden" : false,
+        },
+        {
+            "org": "MHacks Hackathon",
+            "positions" : [
+                {
+                    "name" : "Director of Technology",
+                    "start" : "Winter 2013, Fall 2013",
                     "end" : "",
                 },
             ],
             "hidden" : false,
         },
         {
-            "org": "",
+            "org": "TEDxUofM",
             "positions" : [
                 {
-                    "name" : "",
-                    "start" : "",
-                    "end" : "",
+                    "name" : "Production Team: Stage Managment",
+                    "start" : "September 2011",
+                    "end" : "March 2012",
                 },
             ],
             "hidden" : false,
         },
-
+        {
+            "org": "UM PC Gamerz Unite",
+            "positions" : [
+                {
+                    "name" : "Co-founder, Vice President",
+                    "start" : "September 2011",
+                    "end" : "April 2012",
+                },
+            ],
+            "hidden" : false,
+        },
+        {
+            "org": "Cranbrook Robotics Team",
+            "positions" : [
+                {
+                    "name" : "Three Year President",
+                    "start" : "September 2005",
+                    "end" : "July 2011",
+                },
+            ],
+            "hidden" : false,
+        },
+    ],
+    "honors" : [
+        {
+            "name" : "University of Michigan College of Engineering Dean's List",
+            "dates" : [
+                "Fall 2011", "Winter 2012", "Fall 2012",
+                "Winter 2013", "Fall 2013", "Winter 2014",
+                "Fall 2014",
+            ],
+        },
+        {
+            "name" : "University of Michigan University Honors",
+            "dates" : [
+                "Winter 2012", "Fall 2012", "Fall 2013",
+            ],
+        },
+        {
+            "name" : "George G. Booth Award",
+            "desc" : "For showing excellence and dedication to improving the Cranbrook school and community as well as representing the ideals the school promotes",
+        },
     ],
 }
