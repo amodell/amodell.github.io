@@ -29,21 +29,21 @@
     </div>
     <hr class="top" />
     <hr class="bot" />
-    <div name="belowline" style="width:768px;">
+    <div class="belowline" style="width:768px;">
       <b>Education</b>
-      <div class="edu_fields">
+      <div id="edu_fields" class="fields">
       </div>
       <b>Experience</b>
-      <div class="exp_fields">
+      <div id="exp_fields" class="fields">
       </div>
       <b>Skills</b>
-      <div class="skill_fields">
+      <div id="skill_fields" class="fields">
       </div>
       <b>Activities</b>
-      <div class="activity_fields">
+      <div id="activity_fields" class="fields">
       </div>
       <b>Honors</b>
-      <div class="honor_fields">
+      <div id="honor_fields" class="fields">
       </div>
     </div>
     <script src="js/jquery-1.10.2.js"></script>
@@ -53,7 +53,7 @@
 
     <!-- Handlebars templates before our buisness logic-->
     <script id="university-template" type="text/x-handlebars-template">
-    <div class="edu_field">
+    <div class="edu_field field">
     <p>
         <b>{{school}}</b>, {{city}}, {{state}}
         <span>{{graduation}}</span>
@@ -66,7 +66,7 @@
     </script>
 
     <script id="secondary-template" type="text/x-handlebars-template">
-    <div class="edu_field">
+    <div class="field">
       <p>
         <b>{{school}}</b>, {{city}}, {{state}}
         <span>{{graduation}}</span>
@@ -76,7 +76,7 @@
     </script>
 
     <script id="exp-template" type="text/x-handlebars-template">
-      <div class="exp_field">
+      <div class="field">
         <p>
           <b>{{org}}</b> {{city}}, {{state}}
           <span>{{start}} - {{end}}</span>
@@ -114,7 +114,7 @@
           else {
             alert("school type error for: " + school["school"]);
           }
-          $(".edu_fields").append(school_html);          
+          $("#edu_fields").append(school_html);          
         })
 
         // Add all experiences
@@ -124,7 +124,7 @@
           }
           var experience_html = experience_template(exp);
           console.log(experience_html);
-          $(".exp_fields").append(experience_html);
+          $("#exp_fields").append(experience_html);
         })
 
         // remove the spinner because we're done?!?
