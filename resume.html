@@ -1,51 +1,93 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link rel="stylesheet" type="text/css" href="resume.css">
-</head>
-<body>
-  <div name="aboveLine">
-    <table name = "heading">
-     <tr>
-       <td style="width:340px;">
-         <font size="5">
-          <b id="name"></b>
-        </font>
-      </td>
-      <td id="rightofname"></td>
-    </tr>
-    <tr>
-     <td>
-      <a id="email" style="text-decoration: none"></a>
-     </td>
-     <td id="addr1" style="width:230px;"></td>
-   </tr>
-   <tr>
-     <td id="phone"></td>
-     <td id="addr2"></td>
-   </table>
- </div>
- <hr class="top" />
- <hr class="bot" />
+  <head>
+    <link rel="stylesheet" type="text/css" href="resume.css">
+  </head>
+  <body>
+    <div name="aboveline">
+      <table name = "heading">
+        <tr>
+          <td style="width:340px;">
+            <font size="5">
+              <b id="name"></b>
+            </font>
+          </td>
+          <td id="rightofname"></td>
+        </tr>
+        <tr>
+          <td>
+            <a id="email" style="text-decoration: none"></a>
+          </td>
+          <td id="addr1" style="width:230px;"></td>
+        </tr>
+        <tr>
+          <td id="phone"></td>
+          <td id="addr2"></td>
+      </table>
+    </div>
+    <hr class="top" />
+    <hr class="bot" />
+    <div name="belowline" style="width:768px;">
+      <b>Education</b>
+      <div id="edu_fields">
+      </div>
+      <b>Experience</b>
+      <div id="exp_fields">
+      </div>
+      <b>Skills</b>
+      <div id="skill_fields">
+      </div>
+      <b>Activities</b>
+      <div id="activity_fields">
+      </div>
+      <b>Honors</b>
+      <div id="honor_fields">
+      </div>
+    </div>
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/jquery-ui-1.11.4.js"></script>
+    <script src="js/handlebars.js"></script>
+    <script src="js/util.js"></script>
 
- <script src="js/jquery-1.10.2.js"></script>
- <script src="js/jquery-ui-1.11.4.js"></script>
- <script src="js/util.js"></script>
-<script>
- var json = loadJSON("https://amodell.github.io/resume.json");
- console.log(json);
+    <!-- Handlebars templates before our buisness logic-->
+    <script id="university-template" type="text/x-handlebars-template">
+    <p>
+      <b>{{school}}</b>, {{city}}, {{state}}
+      <span>{{graduation}}</span>
+    </p>
+    <p>{{college}} - {{degree}} - GPA: {{gpa}}</p>
+    {{#if minor}}
+    <p>Minor: {{minor}}</p>
+    {{/if}}
+    </script>
+<!--
+    <script id="secondary-template" type="text/x-handlebars-template">
+    <p>
+      <b>{{school}}</b>, {{city}}, {{state}}
+      <span>{{graduation}}</span>
+    </p>
+    <p>Secondary School - GPA: {{gpa}}
+    </script>
 
- // set up basic info
- var basic = json["basic"];
- $("#name")[0]["innerText"] = basic["name"];
- $("#email")[0]["innerText"] = basic["email"];
- $("#email")[0]["href"] = "mailto:" + basic["email"];
- $("#phone")[0]["innerText"] = basic["phone"];
- $("#addr1")[0]["innerText"] = basic["addr1"];
- var addr2 = basic["city"] + ", " + basic["state"] + ", " + basic["zip"];
- $("#addr2")[0]["innerText"] = addr2;
+    <script id="exp-template" type="text/x-handlebars-template">
+
+    </script>
+-->
+    <script>
+      var json = loadJSON("https://amodell.github.io/resume.json");
+      console.log(json);
+
+      // set up basic info
+      var basic = json["basic"];
+      $("#name")[0]["innerText"] = basic["name"];
+      $("#email")[0]["innerText"] = basic["email"];
+      $("#email")[0]["href"] = "mailto:" + basic["email"];
+      $("#phone")[0]["innerText"] = basic["phone"];
+      $("#addr1")[0]["innerText"] = basic["addr1"];
+      var addr2 = basic["city"] + ", " + basic["state"] + ", " + basic["zip"];
+      $("#addr2")[0]["innerText"] = addr2;
 
 
-</script>
-</body>
+    </script>
+  </body>
 </html>
