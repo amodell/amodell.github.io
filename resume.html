@@ -34,16 +34,16 @@
       <div class="edu_fields">
       </div>
       <b>Experience</b>
-      <div id="exp_fields">
+      <div class="exp_fields">
       </div>
       <b>Skills</b>
-      <div id="skill_fields">
+      <div class="skill_fields">
       </div>
       <b>Activities</b>
-      <div id="activity_fields">
+      <div class="activity_fields">
       </div>
       <b>Honors</b>
-      <div id="honor_fields">
+      <div class="honor_fields">
       </div>
     </div>
     <script src="js/jquery-1.10.2.js"></script>
@@ -75,6 +75,20 @@
       </div>
     </script>
 
+    <script id="exp-template" type="text/x-handlebars-template">
+      <div class="exp_field">
+        <p>
+          <b>{{org}}</b> {{city}}, {{state}}
+          <span>{{start}} - {{end}}</span>
+        </p>
+        <p><i>{{position}}</i></p>
+        <ul>
+        {{#each desc}}
+        <li>{{this}}</li>
+        {{/each}}
+        </ul>
+      </div>
+    </script>
 
     <script>
       function fillResume(json) {
@@ -103,6 +117,16 @@
           $(".edu_fields").append(school_html);          
         })
 
+        // Add all experiences
+        json["experience"].forEach(function(exp){
+          if (exp.hasOwnProperty("hidden") && exp["hidden"] === "true") {
+            return;
+          }
+          var experience_html = experience_template(exp);
+          console.log(experience_html);
+          $(".exp_fields").append(experience_html);
+        })
+
         // remove the spinner because we're done?!?
         $(".spinner").remove();
       };
@@ -112,6 +136,8 @@
         $("#university-template").html());
       var secondary_template = Handlebars.compile(
         $("#secondary-template").html());
+      var experience_template = Handlebars.compile(
+        $("#exp-template").html());
 
       $.getJSON("https://amodell.github.io/resume.json", fillResume);
     </script>
