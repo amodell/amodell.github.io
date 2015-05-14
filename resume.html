@@ -119,7 +119,7 @@
 
         // Add all experiences
         json["experience"].forEach(function(exp){
-          if (exp.hasOwnProperty("hidden") && exp["hidden"] === "true") {
+          if (exp.hasOwnProperty("hidden") && exp["hidden"] === true) {
             return;
           }
           var experience_html = experience_template(exp);
