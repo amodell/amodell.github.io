@@ -145,14 +145,17 @@
     </script>
 
     <script id="honor-template" type="text/x-handlebars-template">
-      <div class="tightfield" width="{{field_width}}">
-        {{#if dates}}<b>{{name}}</b>
+      <div class="tightfield" style="width:{{field_width}};">
+        <div class="honorname" style="width:{{name_width}};"><b>{{name}}</b></div>
+        <div class="honorspace"></div>
+        <div class="honordescription" style="width:{{desc_width}};">{{desc}}</div>
+      </div>
+    </script>
+
+    <script id="honor-with-date" type="text/x-handlebars-template">
+      <div class="tightfield" style="width:{{field_width}};">
+        <b>{{name}}</b>
         <span>{{#each dates}}{{#if @index}}, {{/if}}{{this}}{{/each}}</span>
-        {{else}}
-          <div class="honorname" style="width:{{name_width}};"><b>{{name}}</b></div>
-          <div class="honorspace"></div>
-          <div class="honordescription" style="width:{{desc_width}}">{{desc}}</div>
-        {{/if}}
       </div>
     </script>
 
@@ -170,6 +173,9 @@
 
         // Add all educations
         json["education"].forEach(function(school){
+          if (school.hasOwnProperty("hidden") && school["hidden"] === true) {
+            return;
+          }
           var school_html = null;
           if (school["type"] === "university") {
             school_html = university_template(school);
@@ -247,12 +253,17 @@
           desc_width = kPageWidth - kIndentWidth - kSpaceWidth -
                        kBackPadding - name_width;
           console.log(name_width + desc_width);
-          if (desc_width < 10) {
+          if (desc_width === NaN || desc_width < 10) {
             alert("honor description width error");
           }
           honor["name_width"] = name_width + "px";
           honor["desc_width"] = desc_width + "px";
-          honor_html = honor_template(honor);
+          honor_html = null;
+          if (honor.hasOwnProperty("dates")) {
+            honor_html = honor_dates_template;
+          } else{
+            honor_html = honor_template(honor);
+          }
           $("#honor_fields").append(honor_html);
         })
 
@@ -275,6 +286,8 @@
         $("#activity-template").html());
       var honor_template = Handlebars.compile(
         $("#honor-template").html());
+      var honor_dates_template = Handlebars.compile(
+        $("#honor-with-date").html());
 
       $(".belowline").css({"width": kPageWidth + "px"});
 

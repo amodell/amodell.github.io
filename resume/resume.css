@@ -11,7 +11,10 @@ div{font-size:11pt}
 }
 .position{margin:0 0 0 20px}
 .skill{margin:0 0 0 50px;}
-.tightfield{margin: 0 0 0 50px;}
+.tightfield{
+  margin: 0 0 0 50px;
+  clear:both;
+}
 
 hr {margin:0 0 0 0;}
 .top{margin:5px 0 0 0;}
