@@ -104,6 +104,32 @@
       </div>
     </script>
 
+    <script id="activity-1line-template" type="text/x-handlebars-template">    
+      <div class="activity">
+        {{org}}: {{positions.0.name}}
+        <span>{{positions.0.start}}
+        {{#if positions.0.end}} - {{positions.0.end}}{{/if}}
+        </span>
+      </div>
+    </script>
+
+    <script id="activity-template" type="text/x-handlebars-template">    
+      <div class="activity">
+      {{org}}
+      {{#if start}}
+      <span>{{start}}{{#if end}} - {{end}}{{/if}}</span>
+      {{/if}}
+      {{#each positions}}
+      <div class="position">
+        {{name}}
+        {{#if start}}
+          <span>{{start}}{{#if end}} - {{end}}{{/if}}</span>
+        {{/if}}
+      </div>
+      {{/each}}
+      </div>
+    </script>
+
     <script>
       function fillResume(json) {
         // set up basic info
@@ -154,7 +180,34 @@
           if (act.hasOwnProperty("hidden") && act["hidden"] === true) {
             return;
           }
-          
+
+          // Make sure hidden positions are taken into account
+          // when we decide which template to use
+          // do this by just recreating the activity
+          function withoutHiddenPositions(activity) {
+            var new_act = JSON.parse(JSON.stringify(activity))
+            new_act["positions"] = [];
+
+            for (var i = 0; i < activity["positions"].length; ++i) {
+              var position = activity["positions"][i]
+              if (!position.hasOwnProperty("hidden") || 
+                  position["hidden"] === false) {
+                new_act["positions"].push(position);
+              }
+            }
+            return new_act;
+          }
+          act = withoutHiddenPositions(act);
+
+          var activity_html = null;
+          console.log(act);
+          if (act["positions"].length === 1 && !act.hasOwnProperty("start")) {
+            activity_html = activity_1line_template(act);
+          }
+          else {
+            activity_html = activity_template(act);
+          }
+          $("#activity_fields").append(activity_html);
         })
 
         // Add all honors
@@ -172,6 +225,10 @@
         $("#exp-template").html());
       var skill_template = Handlebars.compile(
         $("#skill-template").html());
+      var activity_1line_template = Handlebars.compile(
+        $("#activity-1line-template").html());
+      var activity_template = Handlebars.compile(
+        $("#activity-template").html());
 
       $.getJSON("https://amodell.github.io/resume/resume.json", fillResume);
     </script>
