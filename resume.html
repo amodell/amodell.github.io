@@ -90,6 +90,7 @@
       </div>
     </script>
 
+
     <script>
       function fillResume(json) {
         // set up basic info
@@ -123,8 +124,22 @@
             return;
           }
           var experience_html = experience_template(exp);
-          console.log(experience_html);
           $("#exp_fields").append(experience_html);
+        })
+
+        // Add all skills
+        json["skills"].forEach(function(skill){
+          var skill_html = "<div class=\"skill\">\n" +
+                          "<table>\n" +
+                          "<tr><td>" + skill["name"] + ":</td>";
+          for (var i = 0; i < skill["desc"].length; ++i) {
+            if (i > 0) {
+              skill_html += "<tr><td></td>";
+            }
+            skill_html += "<td>" + skill["desc"][i] + "</td></tr>\n"
+          }
+          skill_html += "</table>\n</div>";
+          $("#skill_fields").append(skill_html);
         })
 
         // remove the spinner because we're done?!?

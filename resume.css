@@ -2,6 +2,7 @@
 div{font-size:11pt}
 .field {margin:.6em 0 0 50px;}
 .fields{margin:0 0 .6em 0;}
+.skill {margin:0 0 0 50px;}
 
 hr {margin:0 0 0 0;}
 .top{margin:5px 0 0 0;}
@@ -9,9 +10,16 @@ hr {margin:0 0 0 0;}
 
 p {margin:0 0 0 0;font-size:11pt;}
 
-ul {margin:0 0 0 0;font-size:11pt;}
 
 span {
   float:right;
   font-size:11pt;
 }
+
+table {margin: 0 0 0 0;}
+tbody {margin: 0 0 0 0;}
+td {margin: 0 0 0 0;}
+tr {margin: 0 0 0 0;}
+
+
+ul {margin:0 0 0 0;font-size:11pt;}
