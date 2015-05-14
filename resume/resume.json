@@ -280,18 +280,23 @@
     ],
     "honors" : [
         {
+            "name" : "University of Michigan College of Engineering Graduation Magna Cum Laude"
+        },
+        {
             "name" : "University of Michigan College of Engineering Dean's List",
             "dates" : [
                 "Fall 2011", "Winter 2012", "Fall 2012",
                 "Winter 2013", "Fall 2013", "Winter 2014",
                 "Fall 2014"
-            ]
+            ],
+            "hidden" : false
         },
         {
             "name" : "University of Michigan University Honors",
             "dates" : [
                 "Winter 2012", "Fall 2012", "Fall 2013"
-            ]
+            ],
+            "hidden" : true
         },
         {
             "name" : "George G. Booth Award",
