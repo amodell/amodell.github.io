@@ -90,6 +90,19 @@
       </div>
     </script>
 
+    <script id="skill-template" type="text/x-handlebars-template">
+      <div class="skill">
+        <table>
+        <tr><td><b>{{name}}:</b></td>
+        {{#each desc}}
+          {{#if @index}}
+            <tr><td></td>
+          {{/if}}
+          <td>{{this}}</td></tr>
+        {{/each}}
+        </table>
+      </div>
+    </script>
 
     <script>
       function fillResume(json) {
@@ -129,18 +142,22 @@
 
         // Add all skills
         json["skills"].forEach(function(skill){
-          var skill_html = "<div class=\"skill\">\n" +
-                          "<table>\n" +
-                          "<tr><td><b>" + skill["name"] + ":</b></td>";
-          for (var i = 0; i < skill["desc"].length; ++i) {
-            if (i > 0) {
-              skill_html += "<tr><td></td>";
-            }
-            skill_html += "<td>" + skill["desc"][i] + "</td></tr>\n"
+          if (skill.hasOwnProperty("hidden") && skill["hidden"] === true) {
+            return;
           }
-          skill_html += "</table>\n</div>";
+          var skill_html = skill_template(skill);
           $("#skill_fields").append(skill_html);
         })
+
+        // Add all activities
+        json["activities"].forEach(function(act){
+          if (act.hasOwnProperty("hidden") && act["hidden"] === true) {
+            return;
+          }
+          
+        })
+
+        // Add all honors
 
         // remove the spinner because we're done?!?
         $(".spinner").remove();
@@ -153,6 +170,8 @@
         $("#secondary-template").html());
       var experience_template = Handlebars.compile(
         $("#exp-template").html());
+      var skill_template = Handlebars.compile(
+        $("#skill-template").html());
 
       $.getJSON("https://amodell.github.io/resume.json", fillResume);
     </script>
