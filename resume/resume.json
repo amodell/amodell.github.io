@@ -289,7 +289,7 @@
                 "Winter 2013", "Fall 2013", "Winter 2014",
                 "Fall 2014"
             ],
-            "hidden" : false
+            "hidden" : true
         },
         {
             "name" : "University of Michigan University Honors",
