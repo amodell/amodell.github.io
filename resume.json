@@ -97,7 +97,7 @@
             "desc" : [
                 "Assisted 281 students by providing turoring to enforce the concepts covered in EECS 281"
             ],
-            "hidden" : "true"
+            "hidden" : true
         },
         {
             "org" : "Facebook, Inc.",
@@ -120,7 +120,7 @@
             "desc" : [
                 "Create and aggregate content related to current technology news"
             ],
-            "hidden" : "true"
+            "hidden" : true
         },
         {
             "org" : "Swtchbrd LLC",
@@ -132,7 +132,7 @@
             "desc" : [
                 "Coordinated the production team for an internet telephony software start-up, and worked with the development team to create a functional prototype of the product"
             ],
-            "hidden" : "true"
+            "hidden" : true
         },
         {
             "org" : "Cranbrook Summer Programs",
@@ -144,7 +144,7 @@
             "desc" : [
                 "Polished communication and leadership skills by instructing elementary and middle school aged children on the basics of Lego programming"
             ],
-            "hidden" : "true"
+            "hidden" : true
         },
         {
             "org" : "Progessive Metal Manufacturing Company",
@@ -157,7 +157,7 @@
                 "Assisted in reducing production times by working on kaizen and 5-S efficiency project teams",
                 "Established an understanding of a manufacturing company's operations by working closely with managers to observe full-scale management practices"
             ],
-            "hidden" : "true"
+            "hidden" : true
         }
     ],
     "skills" : [
@@ -165,7 +165,8 @@
             "name" : "Programming",
             "desc" : [
                 "C++, Hack (PHP), Netlogo, C, Python | Ruby, Go, Java, Perl",
-                "Concurrent Programming, Berkeley Sockets, Relational Databases (SQL)"
+                "Concurrent Programming, Berkeley Sockets, Relational Databases (SQL)",
+                "View the source of this page for my extent of web front end"
             ]
         },
         {
@@ -185,7 +186,7 @@
                     "end" : ""
                 }
             ],
-            "hidden" : "true"
+            "hidden" : true
         },
         {
             "org" : "Eta Kappa Nu (HKN) - &beta;&epsilon;",
@@ -199,7 +200,7 @@
                     "name" : "Events Officer",
                     "start" : "January 2015",
                     "end" : "March 2015",
-                    "hidden" : "true"
+                    "hidden" : true
                 }
             ]
         },

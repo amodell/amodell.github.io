@@ -131,7 +131,7 @@
         json["skills"].forEach(function(skill){
           var skill_html = "<div class=\"skill\">\n" +
                           "<table>\n" +
-                          "<tr><td>" + skill["name"] + ":</td>";
+                          "<tr><td><b>" + skill["name"] + ":</b></td>";
           for (var i = 0; i < skill["desc"].length; ++i) {
             if (i > 0) {
               skill_html += "<tr><td></td>";
