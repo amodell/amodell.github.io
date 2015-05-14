@@ -261,7 +261,7 @@
           honor["space_width"] = kSpaceWidth + "px";
           honor_html = null;
           if (honor.hasOwnProperty("dates")) {
-            honor_html = honor_dates_template;
+            honor_html = honor_dates_template(honor);
           } else{
             honor_html = honor_template(honor);
           }
