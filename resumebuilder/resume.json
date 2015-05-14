@@ -26,7 +26,7 @@
             "state" : "ORT",
             "type" : "secondary",
             "gpa" : "5.00/4.00",
-            "graduation" : "June 2011",
+            "graduation" : "June 2011"
         }
     ],
     "experience" : [
@@ -73,7 +73,7 @@
                 "I still don't know where those eggs came from"
             ],
             "hidden" : true
-        },
+        }
     ],
     "skills" : [
         {
@@ -151,7 +151,8 @@
                 }
 
             ]
-        },
+        }
+    ],
     "honors" : [
         {
             "name" : "Best Cup of Coffee",
@@ -161,7 +162,7 @@
             "name" : "Alright kinda guy",
             "dates" : [
                 "Winter 2013", "Fall 2013", "Fall 2014"
-            ],
+            ]
         },
         {
             "name" : "Long description award",
