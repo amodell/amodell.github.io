@@ -1,0 +1,162 @@
+{
+    "basic" : {
+        "name" : "Eric Mitchel Modell",
+        "email" : "emodell@bgsu.edu",
+        "phone" : "248-979-6137",
+        "addr1" : "23790 Woodlynne Dr.",
+        "city" : "Bingham Farms",
+        "state" : "MI",
+        "zip" : "48025"
+    },
+    "education" : [
+        {
+            "school" : "Bowling Green State University",
+            "city" : " Bowling Green",
+            "state" : "OH",
+            "type" : "university",
+            "college" : "College of Arts and Sciences",
+            "degree" : "BA Sociology",
+            "gpa" : "3.38/4.00",
+            "graduation" : "May 2018",
+            "minor" : "Management"
+        },
+        {
+            "school" : "Cranbrook Kingswood Upper School",
+            "city" : "Bloomfield Hills",
+            "state" : "MI",
+            "type" : "secondary",
+            "college" : "",
+            "degree" : "",
+            "graduation" : "June 2014",
+            "minor" : ""
+        }
+    ],
+    "experience" : [
+        {
+            "org" : "Facebook, Inc.",
+            "city" : "Southfield",
+            "state" : "MI",
+            "position" : "Intern",
+            "start" : "June 2015",
+            "end" : "August 2015",
+            "desc" : [
+                "Assisted with office work and the reorganization of client files. ",
+                "Cataloged client files and reorganized office space",
+                "Administered File Retention Policy to ensure that files were eliminated following legal standards",
+                "Verified trades for nationally recognized pension plans",
+            ]
+        },
+        {
+            "org" : "Cranbrook Day Camp for Boys",
+            "city" : "Bloomfield Hills",
+            "state" : "MI",
+            "position" : "Camp Counselor",
+            "start" : "June 2016",
+            "end" : "August 2016",
+            "desc" : [
+                "Responsible for the care and safety of up to twenty boys per day between the ages of 8-14",
+                "Facilitated activities and created events and games for the children to participate and benefit from",
+                "Supervised field trips to stadiums, obstacle courses, and other public facilities",
+                "Encouraged active participation in activities, ensuring that everyone felt included and had a good time",
+            ]
+        },
+    ],
+    "skills" : [
+        {
+            "name" : "Microsoft Office",
+            "desc" : [
+                "Proficient in Microsoft Word, Power Point, and Excel",
+            ]
+        },
+        {
+            "name" : "Data Analytics",
+            "desc" : [
+                "Experienced in applying statistical analysis to examine multiple data sets",
+            ]
+        },
+        {
+            "name" : "Engagement",
+            "desc" : [
+                "Works well with and understands young adults",
+            ],
+        },
+        {
+            "name" : "Event Management",
+            "desc" : [
+                "Leads voulenteer community service events, club projects, and club tournaments",
+            ],
+        }
+    ],
+    "activities" : [
+        {
+            "org": "",
+            "positions" : [
+                {
+                    "name" : "",
+                    "start" : "",
+                    "end" : ""
+                }
+            ],
+            "hidden" : true
+        },
+        {
+            "org": "Sociology Student Association",
+            "positions" : [
+                {
+                    "name" : "Member",
+                    "start" : "September 2015",
+                    "end" : "Present"
+                }
+            ]
+        },
+        {
+            "org": "BGSU Hillel",
+            "positions" : [
+                {
+                    "name" : "",
+                    "start" : "September 2014",
+                    "end" : "Present"
+                }
+            ]
+        },
+        {
+            "org" : "BGSU Gamers Society and BGSU Smash Club",
+            "positions" : [
+                {
+                    "name" : "Founding Member and Vice President - Smash Club",
+                    "start" : "September 2016",
+                    "end" : "Presant"
+                },
+            ]
+        },
+        {
+            "org": "Cranbrook Robotics Team",
+            "positions" : [
+                {
+                    "name" : "Member and Driver",
+                    "start" : "September 2009",
+                    "end" : "May 2014"
+                }
+            ]
+        },
+        {
+            "org": "Cranbrook Boys Mentoring Club",
+            "positions" : [
+                {
+                    "name" : "Founding Member",
+                    "start" : "January 2013",
+                    "end" : "May 2014"
+                }
+            ]
+        },
+    ],
+    "honors" : [
+        {
+            "name" : "Bowling Green State University Deans List",
+            "dates" : [
+                "Spring 2016",
+            ],
+            "hidden" : false
+        },
+    ]
+}
