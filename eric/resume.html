@@ -178,7 +178,6 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
       function fillResume(json) {
         // set up basic info
         var basic = json["basic"];
-      print(basic);
         $("#name")[0]["innerText"] = basic["name"];
         $("#email")[0]["innerText"] = basic["email"];
         $("#email")[0]["href"] = "mailto:" + basic["email"];
