@@ -43,7 +43,7 @@
                 "Assisted with office work and the reorganization of client files. ",
                 "Cataloged client files and reorganized office space",
                 "Administered File Retention Policy to ensure that files were eliminated following legal standards",
-                "Verified trades for nationally recognized pension plans",
+                "Verified trades for nationally recognized pension plans"
             ]
         },
         {
@@ -57,7 +57,7 @@
                 "Responsible for the care and safety of up to twenty boys per day between the ages of 8-14",
                 "Facilitated activities and created events and games for the children to participate and benefit from",
                 "Supervised field trips to stadiums, obstacle courses, and other public facilities",
-                "Encouraged active participation in activities, ensuring that everyone felt included and had a good time",
+                "Encouraged active participation in activities, ensuring that everyone felt included and had a good time"
             ]
         },
     ],
@@ -65,26 +65,26 @@
         {
             "name" : "Microsoft Office",
             "desc" : [
-                "Proficient in Microsoft Word, Power Point, and Excel",
+                "Proficient in Microsoft Word, Power Point, and Excel"
             ]
         },
         {
             "name" : "Data Analytics",
             "desc" : [
-                "Experienced in applying statistical analysis to examine multiple data sets",
+                "Experienced in applying statistical analysis to examine multiple data sets"
             ]
         },
         {
             "name" : "Engagement",
             "desc" : [
-                "Works well with and understands young adults",
-            ],
+                "Works well with and understands young adults"
+            ]
         },
         {
             "name" : "Event Management",
             "desc" : [
-                "Leads voulenteer community service events, club projects, and club tournaments",
-            ],
+                "Leads voulenteer community service events, club projects, and club tournaments"
+            ]
         }
     ],
     "activities" : [
@@ -126,7 +126,7 @@
                     "name" : "Founding Member and Vice President - Smash Club",
                     "start" : "September 2016",
                     "end" : "Presant"
-                },
+                }
             ]
         },
         {
@@ -154,9 +154,9 @@
         {
             "name" : "Bowling Green State University Deans List",
             "dates" : [
-                "Spring 2016",
+                "Spring 2016"
             ],
             "hidden" : false
-        },
+        }
     ]
 }
