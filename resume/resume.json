@@ -1,12 +1,12 @@
 {
     "basic" : {
         "name" : "Andrew Richard Modell",
-        "email" : "amodell@umich.edu",
+        "email" : "thewizard25@gmail.com",
         "phone" : "+1 248 636 2487",
-        "addr1" : "23790 Woodlynne Dr.",
-        "city" : "Bingham Farms",
+        "addr1" : "705 Albany St.",
+        "city" : "Ferndale",
         "state" : "MI",
-        "zip" : "48025"
+        "zip" : "48220"
     },
     "education" : [
         {
@@ -34,13 +34,51 @@
     ],
     "experience" : [
         {
-            "org" : "Facebook, Inc.",
-            "city" : "Menlo Park",
-            "state" : "CA",
-            "position" : "Software Engineer",
-            "start" : "June 2015",
+            "org" : "Meta",
+            "city" : "Ferndale (remote)" ,
+            "state" : "MI",
+            "position" : "Software Engineering Manager",
+            "start" : "September 2021",
             "end" : "Present",
             "desc" : [
+                "Supported a team of seven SWEs responsible for Privacy Compliance Infra.",
+                "Engineer levels ranged from new-grad to ic6 (second \"senior\" level).",
+                "Grew engineers across junior and senior levels while devleoping solutions to key regulatory challenges."
+            ]
+        },
+        {
+            "org" : "Magic Foods LLC.",
+            "city" : "Ferndale",
+            "state" : "MI",
+            "position" : "Co-Founder / Formulator",
+            "start" : "April 2023",
+            "end" : "Present",
+            "desc" : [
+                "Co-Founder in a food products startup featuring \"The Wizard's Magic Spice Blend\" "
+            ]
+        },
+        {
+            "org" : "youtube.com/@andymodellbackpacks",
+            "city" : "Ferndale",
+            "state" : "MI",
+            "position" : "Influencer and Affiliate Marketer",
+            "start" : "November 2018",
+            "end" : "Present",
+            "desc" : [
+                "Producer of a youtube channel that reviews urban travel and EDC backpacks.",
+                "Income generated via ad revenue, affiliate sales, and speculation of limited edition products."
+            ]
+        },
+        {
+            "org" : "Meta",
+            "city" : "Menlo Park",
+            "state" : "CA",
+            "position" : "Senior Software Engineer (ic6)",
+            "start" : "June 2015",
+            "end" : "September 2021",
+            "desc" : [
+                "Built out Security Infrastructure focusing on Login Authentication Security (2015-2018)",
+                "Shifted to Privacy Infra, focusing on Compliance, Consent, and Data Policy Propagation and Enforcement. (2018-2021)"
             ]
         },
         {
@@ -51,7 +89,8 @@
             "start" : "November 2014",
             "end" : "July 2015",
             "desc" : [
-                "Generated and extended models to simulate the spread of beliefs through networks"
+                "Generated and extended models to simulate the spread of beliefs through networks",
+                "Published COHERENCE AND CORRESPONDENCE IN THE NETWORK DYNAMICS OF BELIEF SUITES as second author"
             ]
         },
         {
@@ -63,6 +102,19 @@
             "end" : "April 2015",
             "desc" : [
                 "Lead discussion and helped instruct undergraduate course on Operating Systems"
+            ],
+            "hidden": true
+        },
+        {
+            "org" : "Facebook",
+            "city" : "Menlo Park, CA / London, UK",
+            "state" : "",
+            "position" : "Software Engineering Intern",
+            "start" : "Summers 2013, 2014",
+            "end" : "",
+            "desc" : [
+                "2013, Menlo Park: Wrote a replacement system to manage metadata for log data",
+                "2014, London: Implemented and analyzed text clustering techniques for spam detection"
             ]
         },
         {
@@ -74,7 +126,8 @@
             "end" : "August 2014",
             "desc" : [
                 "Implemented and analyzed text clustering techniques for spam detection"
-            ]
+            ],
+            "hidden": true
         },
         {
             "org" : "University of Michigan College of Engineering",
@@ -108,7 +161,8 @@
             "end" : "August 2013",
             "desc" : [
                 "Wrote a replacement system to manage metadata for log data"
-            ]
+            ],
+            "hidden": true
         },
         {
             "org" : "TekSyndicate.com",
@@ -164,8 +218,8 @@
         {
             "name" : "Programming",
             "desc" : [
-                "C++, Hack (PHP), Netlogo, C, Python | Ruby, Go, Java, Perl",
-                "Concurrent Programming, Berkeley Sockets, Relational Databases (SQL)",
+                "C++, Hack (PHP), C, Python | Netlogo, Ruby, Go, Java, Perl",
+                "Concurrent Programming, Relational Databases (SQL)",
                 "View the source of this page for the extent of my web front end skills"
             ]
         },
@@ -220,21 +274,10 @@
             "org": "University of Michigan Centeral Student Government",
             "positions" : [
                 {
-                    "name" : "College of Engineering Representative",
-                    "start" : "October 2011",
-                    "end" : "April 2015"
-                },
-                {
-                    "name" : "Multiple Chair / Vice Chair positions",
-                    "start" : "January 2012",
-                    "end" : "April 2015"
-                },
-                {
-                    "name" : "Speaker of the Assmebly",
-                    "start" : "March 2013",
-                    "end" : "December 2014"
+                  "name" : "Representative, Speaker, Chair",
+                  "start" : "October 2011",
+                  "end" : "April 2015"
                 }
-
             ]
         },
         {
@@ -255,7 +298,8 @@
                     "start" : "September 2011",
                     "end" : "March 2012"
                 }
-            ]
+            ],
+            "hidden" : true
         },
         {
             "org": "UM PC Gamerz Unite",
@@ -265,7 +309,8 @@
                     "start" : "September 2011",
                     "end" : "April 2012"
                 }
-            ]
+            ],
+            "hidden" : true
         },
         {
             "org": "Cranbrook Robotics Team",
